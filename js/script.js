@@ -1,10 +1,10 @@
 
 const CONFIG = {
-  botInvite: "https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID&scope=bot+applications.commands&permissions=8",
-  discordInvite: "https://discord.gg/SEUINVITE",
+  botInvite: "https://discord.com/oauth2/authorize?client_id=1500350503832518846",
+  discordInvite: "https://discord.gg/AUWnMAZTC",
   botCommandsChannel: "https://discord.com/channels/SEU_SERVER_ID/SEU_CANAL_ID",
   supabaseUrl: "https://yphcdpzkzdlerriclzrn.supabase.co",
-  supabaseAnonKey: "COLE_SUA_ANON_KEY_AQUI"
+  supabaseAnonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlwaGNkcHpremRsZXJyaWNsenJuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkxNDEwNzksImV4cCI6MjA5NDcxNzA3OX0.Dj9lDuSPDns29XgCjeHyrcPDuovaqzAQsVMrdPGvhHs"
 };
 
 let ranks = [];
