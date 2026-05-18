@@ -3,42 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Shop</title>
+<title>Kakera Shop - VOID RNG</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
-<div class="logo">VOID RNG</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="commands.html">Comandos</a>
-<a href="ranking.html">Ranking</a>
-<a href="shop.html">Kakera Shop</a>
-<a href="verify.html">Verificação</a>
-</nav>
+  <div class="logo">VOID RNG<small>ANIME • AURA • KAKERA</small></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="commands.html">Comandos</a>
+    <a href="ranking.html">Ranking</a>
+    <a href="shop.html">Kakera Shop</a>
+    <a href="verify.html">Verificação</a>
+  </nav>
 </header>
 
 
-<section class="cards">
-<div class="card"><h2>📦 Mythic Box</h2><p>250 Kakera</p></div>
-<div class="card"><h2>🍀 Luck Gem</h2><p>+50 Luck</p></div>
-<div class="card"><h2>🌠 Roll Pack</h2><p>+10 Wishes</p></div>
+<section class="section">
+  <h1 class="section-title">Kakera Shop</h1>
+  <div class="notice">Comprar pelo site copia o comando e abre o Discord. A compra real acontece no bot.</div>
+  <div class="shop-grid">
+    <div class="shop-item"><h2>📦 Mythic Box</h2><div class="price">250 Kakera</div><p>Chance de personagem raro, luck, fragmentos e jackpot.</p><button class="btn" onclick="buyItem('/kbuy mythicbox')">Comprar</button></div>
+    <div class="shop-item"><h2>🍀 Luck Gem</h2><div class="price">100 Kakera</div><p>Boost de luck para drops raros.</p><button class="btn" onclick="buyItem('/kbuy luckgem')">Comprar</button></div>
+    <div class="shop-item"><h2>🌠 Wish Pack</h2><div class="price">120 Kakera</div><p>Pacote de wishes para anime RNG.</p><button class="btn" onclick="buyItem('/kbuy wishpack')">Comprar</button></div>
+    <div class="shop-item"><h2>🧩 Aura Frag</h2><div class="price">80 Kakera</div><p>Fragmentos para evoluir sua aura.</p><button class="btn" onclick="buyItem('/kbuy aurafrag')">Comprar</button></div>
+  </div>
 </section>
 
 
 <div class="modal-bg" id="verifyModal">
   <div class="modal">
     <h2>🔐 Verificação</h2>
-    <p>Cole sua key privada abaixo.</p>
-    <input id="verifyKey" placeholder="Sua key privada">
-    <button class="btn" style="margin-top:15px" onclick="fakeVerify()">Verificar</button>
-    <button class="btn secondary" style="margin-top:15px" onclick="closeVerify()">Fechar</button>
+    <p style="color:#a1a1aa">Cole sua key privada. Isso é só um preview visual; a verificação real acontece no Discord pelo bot.</p>
+    <input id="verifyKey" placeholder="Cole sua key privada aqui">
+    <button class="btn" onclick="fakeVerify()">Verificar</button>
+    <button class="btn secondary" onclick="closeVerify()">Fechar</button>
     <p id="verifyResult"></p>
   </div>
 </div>
+<div class="toast" id="toast"></div>
 
-<footer>VOID RNG © 2026</footer>
+<footer>VOID RNG © 2026 • Dashboard oficial</footer>
 <script src="js/script.js"></script>
 </body>
 </html>

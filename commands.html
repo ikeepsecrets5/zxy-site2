@@ -3,44 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Comandos</title>
+<title>Comandos - VOID RNG</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
-<div class="logo">VOID RNG</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="commands.html">Comandos</a>
-<a href="ranking.html">Ranking</a>
-<a href="shop.html">Kakera Shop</a>
-<a href="verify.html">Verificação</a>
-</nav>
+  <div class="logo">VOID RNG<small>ANIME • AURA • KAKERA</small></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="commands.html">Comandos</a>
+    <a href="ranking.html">Ranking</a>
+    <a href="shop.html">Kakera Shop</a>
+    <a href="verify.html">Verificação</a>
+  </nav>
 </header>
 
 
-<section class="list">
-<h1>📜 Comandos</h1>
-<div class="item"><span>/wish</span><span>Anime RNG</span></div>
-<div class="item"><span>/fusion</span><span>Fusão</span></div>
-<div class="item"><span>/animebattle</span><span>Batalha</span></div>
-<div class="item"><span>/kshop</span><span>Kakera Shop</span></div>
+<section class="section">
+  <h1 class="section-title">Comandos</h1>
+  <div class="notice">Clique em copiar para salvar o comando e abrir o canal do bot no Discord.</div>
+  <div class="commands">
+    <div class="command-row"><div><code>/wish 10</code> <span>Gira personagens</span></div><button class="btn small" onclick="buyItem('/wish 10')">Copiar</button></div>
+    <div class="command-row"><div><code>/mythicbox</code> <span>Abre Mythic Box</span></div><button class="btn small" onclick="buyItem('/mythicbox')">Copiar</button></div>
+    <div class="command-row"><div><code>/kshop</code> <span>Mostra Kakera Shop</span></div><button class="btn small" onclick="buyItem('/kshop')">Copiar</button></div>
+    <div class="command-row"><div><code>/animebattle @user</code> <span>Batalha anime</span></div><button class="btn small" onclick="buyItem('/animebattle @user')">Copiar</button></div>
+    <div class="command-row"><div><code>/roll 10</code> <span>Gira auras</span></div><button class="btn small" onclick="buyItem('/roll 10')">Copiar</button></div>
+  </div>
 </section>
 
 
 <div class="modal-bg" id="verifyModal">
   <div class="modal">
     <h2>🔐 Verificação</h2>
-    <p>Cole sua key privada abaixo.</p>
-    <input id="verifyKey" placeholder="Sua key privada">
-    <button class="btn" style="margin-top:15px" onclick="fakeVerify()">Verificar</button>
-    <button class="btn secondary" style="margin-top:15px" onclick="closeVerify()">Fechar</button>
+    <p style="color:#a1a1aa">Cole sua key privada. Isso é só um preview visual; a verificação real acontece no Discord pelo bot.</p>
+    <input id="verifyKey" placeholder="Cole sua key privada aqui">
+    <button class="btn" onclick="fakeVerify()">Verificar</button>
+    <button class="btn secondary" onclick="closeVerify()">Fechar</button>
     <p id="verifyResult"></p>
   </div>
 </div>
+<div class="toast" id="toast"></div>
 
-<footer>VOID RNG © 2026</footer>
+<footer>VOID RNG © 2026 • Dashboard oficial</footer>
 <script src="js/script.js"></script>
 </body>
 </html>
