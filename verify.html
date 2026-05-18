@@ -3,45 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Verificação - VOID RNG</title>
+<title>Verify</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
-  <div class="logo">VOID RNG<small>ANIME • AURA • KAKERA</small></div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="commands.html">Comandos</a>
-    <a href="ranking.html">Ranking</a>
-    <a href="shop.html">Kakera Shop</a>
-    <a href="verify.html">Verificação</a>
-  </nav>
+<div class="logo">VOID RNG</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="commands.html">Comandos</a>
+<a href="ranking.html">Ranking</a>
+<a href="shop.html">Kakera Shop</a>
+<a href="verify.html">Verificação</a>
+</nav>
 </header>
 
 
 <section class="hero">
-  <section>
-    <div class="badge">🔐 Key System</div>
-    <h1>Verificação por <span class="gradient">key privada</span>.</h1>
-    <p>No Discord, clique no botão de verificação, receba sua key privada e cole no modal para liberar o servidor.</p>
-    <div class="actions">
-      <a class="btn" href="#">Entrar no Discord</a>
-      <a class="btn secondary" href="commands.html">Ver comandos</a>
-    </div>
-  </section>
-  <aside class="panel">
-    <h2>Como funciona?</h2>
-    <div class="list" style="margin-top:18px">
-      <div class="list-item"><strong>1. Clique</strong><span>Verificar</span></div>
-      <div class="list-item"><strong>2. Receba</strong><span>Key privada</span></div>
-      <div class="list-item"><strong>3. Cole</strong><span>No modal</span></div>
-      <div class="list-item"><strong>4. Libera</strong><span>Cargo verificado</span></div>
-    </div>
-  </aside>
+<div>
+<h1>🔐 Verificação por <span class="gradient">Key</span></h1>
+<p>Sistema privado de verificação inspirado em keyauth.</p>
+<button class="btn" onclick="openVerify()">Verificar</button>
+</div>
+
+<div class="panel">
+<h2>Como funciona?</h2>
+<p>1. Receba sua key</p>
+<p>2. Cole no modal</p>
+<p>3. Libere o servidor</p>
+</div>
 </section>
 
-<footer>VOID RNG © 2026 • feito para Discord</footer>
+
+<div class="modal-bg" id="verifyModal">
+  <div class="modal">
+    <h2>🔐 Verificação</h2>
+    <p>Cole sua key privada abaixo.</p>
+    <input id="verifyKey" placeholder="Sua key privada">
+    <button class="btn" style="margin-top:15px" onclick="fakeVerify()">Verificar</button>
+    <button class="btn secondary" style="margin-top:15px" onclick="closeVerify()">Fechar</button>
+    <p id="verifyResult"></p>
+  </div>
+</div>
+
+<footer>VOID RNG © 2026</footer>
 <script src="js/script.js"></script>
 </body>
 </html>

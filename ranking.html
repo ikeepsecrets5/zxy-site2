@@ -3,34 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Ranking - VOID RNG</title>
+<title>Ranking</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
-  <div class="logo">VOID RNG<small>ANIME • AURA • KAKERA</small></div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="commands.html">Comandos</a>
-    <a href="ranking.html">Ranking</a>
-    <a href="shop.html">Kakera Shop</a>
-    <a href="verify.html">Verificação</a>
-  </nav>
+<div class="logo">VOID RNG</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="commands.html">Comandos</a>
+<a href="ranking.html">Ranking</a>
+<a href="shop.html">Kakera Shop</a>
+<a href="verify.html">Verificação</a>
+</nav>
 </header>
 
 
-<section class="section">
-  <h1 class="section-title">Ranking Preview</h1>
-  <div class="list">
-    <div class="list-item"><strong>#1 @Gojo</strong><span>💎 18,420 Kakera</span></div>
-    <div class="list-item"><strong>#2 @Sukuna</strong><span>🌌 Omega Aura</span></div>
-    <div class="list-item"><strong>#3 @Shadow</strong><span>🍀 x845 Luck</span></div>
-    <div class="list-item"><strong>#4 @Rem</strong><span>🎌 42 personagens</span></div>
-  </div>
+<section class="list">
+<h1>🏆 Ranking</h1>
+<div class="item"><span>#1 Gojo</span><span>💎 18240</span></div>
+<div class="item"><span>#2 Sukuna</span><span>🌌 Omega</span></div>
+<div class="item"><span>#3 Shadow</span><span>🍀 x845</span></div>
 </section>
 
-<footer>VOID RNG © 2026 • feito para Discord</footer>
+
+<div class="modal-bg" id="verifyModal">
+  <div class="modal">
+    <h2>🔐 Verificação</h2>
+    <p>Cole sua key privada abaixo.</p>
+    <input id="verifyKey" placeholder="Sua key privada">
+    <button class="btn" style="margin-top:15px" onclick="fakeVerify()">Verificar</button>
+    <button class="btn secondary" style="margin-top:15px" onclick="closeVerify()">Fechar</button>
+    <p id="verifyResult"></p>
+  </div>
+</div>
+
+<footer>VOID RNG © 2026</footer>
 <script src="js/script.js"></script>
 </body>
 </html>

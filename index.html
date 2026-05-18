@@ -3,63 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>zxy</title>
+<title>VOID RNG</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
-  <div class="logo">VOID RNG<small>ANIME • AURA • KAKERA</small></div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="commands.html">Comandos</a>
-    <a href="ranking.html">Ranking</a>
-    <a href="shop.html">Kakera Shop</a>
-    <a href="verify.html">Verificação</a>
-  </nav>
+<div class="logo">VOID RNG</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="commands.html">Comandos</a>
+<a href="ranking.html">Ranking</a>
+<a href="shop.html">Kakera Shop</a>
+<a href="verify.html">Verificação</a>
+</nav>
 </header>
 
 
-<main class="hero">
-  <section>
-    <div class="badge">🌌 Sistema RNG avançado para Discord</div>
-    <h1>O bot de anime <span class="gradient">mais viciante</span> do seu servidor.</h1>
-    <p>Colecione personagens, evolua auras, compre Mythic Boxes, use Kakera e batalhe contra jogadores em um sistema inspirado em gacha/MMO.</p>
-    <div class="actions">
-      <a class="btn" href="#">Adicionar Bot</a>
-      <a class="btn secondary" href="commands.html">Ver comandos</a>
-    </div>
-  </section>
-  <aside class="panel">
-    <div class="profile-top">
-      <div>
-        <span style="color:#a1a1aa">Player Profile</span>
-        <h2 style="margin:5px 0 0;font-size:30px">@Gojo</h2>
-      </div>
-      <div class="rank-pill">神 Divine</div>
-    </div>
-    <div class="stats-grid">
-      <div class="stat"><span>Melhor Aura</span><strong>Ω OMEGA</strong></div>
-      <div class="stat"><span>Kakera</span><strong>💎 18,420</strong></div>
-      <div class="stat"><span>Wishlist</span><strong>⭐ 24</strong></div>
-      <div class="stat"><span>Luck</span><strong>🍀 x845</strong></div>
-    </div>
-    <div class="mythic">
-      <span>Mythic Box</span>
-      <h2 style="margin:8px 0 0">神 Character Unlocked</h2>
-    </div>
-  </aside>
-</main>
-<section class="section">
-  <h2 class="section-title">Sistemas principais</h2>
-  <div class="cards">
-    <div class="card"><div class="icon">🌌</div><h3>Aura RNG</h3><p>Auras raras, pity, luck global, duelos e evolução por fragmentos.</p></div>
-    <div class="card"><div class="icon">🎌</div><h3>Anime RNG</h3><p>Wishes, coleção, fusion, batalha anime, favoritos e personagens 神.</p></div>
-    <div class="card"><div class="icon">💎</div><h3>Kakera Shop</h3><p>Compre itens premium, mythic boxes, boosts e recursos raros.</p></div>
-  </div>
+<section class="hero">
+<div>
+<h1>O bot de anime <span class="gradient">mais viciante</span> do Discord.</h1>
+<p>Auras, Kakera, personagens raros, anime battles e sistema RNG.</p>
+<button class="btn" onclick="addBot()">Adicionar Bot</button>
+<button class="btn secondary" onclick="joinDiscord()">Entrar no Discord</button>
+</div>
+
+<div class="panel">
+<h2>@Gojo</h2>
+<p>🌌 Omega Aura</p>
+<p>💎 18,420 Kakera</p>
+<p>🍀 x845 Luck</p>
+</div>
 </section>
 
-<footer>VOID RNG © 2026 • feito para Discord</footer>
+<section class="cards">
+<div class="card"><h2>🌌 Aura RNG</h2><p>Sistema de auras raras.</p></div>
+<div class="card"><h2>🎌 Anime RNG</h2><p>Wishes e coleção.</p></div>
+<div class="card"><h2>💎 Kakera Shop</h2><p>Itens premium.</p></div>
+</section>
+
+
+<div class="modal-bg" id="verifyModal">
+  <div class="modal">
+    <h2>🔐 Verificação</h2>
+    <p>Cole sua key privada abaixo.</p>
+    <input id="verifyKey" placeholder="Sua key privada">
+    <button class="btn" style="margin-top:15px" onclick="fakeVerify()">Verificar</button>
+    <button class="btn secondary" style="margin-top:15px" onclick="closeVerify()">Fechar</button>
+    <p id="verifyResult"></p>
+  </div>
+</div>
+
+<footer>VOID RNG © 2026</footer>
 <script src="js/script.js"></script>
 </body>
 </html>
