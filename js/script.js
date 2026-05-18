@@ -2,7 +2,7 @@
 const CONFIG = {
   botInvite: "https://discord.com/oauth2/authorize?client_id=1500350503832518846",
   discordInvite: "https://discord.gg/AUWnMAZTC",
-  botCommandsChannel: "https://discord.com/channels/SEU_SERVER_ID/SEU_CANAL_ID",
+  botCommandsChannel: "https://discord.com/channels/1499969209080217751/1499969210183454802",
   supabaseUrl: "https://yphcdpzkzdlerriclzrn.supabase.co",
   supabaseAnonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlwaGNkcHpremRsZXJyaWNsenJuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkxNDEwNzksImV4cCI6MjA5NDcxNzA3OX0.Dj9lDuSPDns29XgCjeHyrcPDuovaqzAQsVMrdPGvhHs"
 };
